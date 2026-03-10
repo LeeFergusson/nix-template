@@ -1,4 +1,4 @@
-# ❄️ Nix Flake Template
+# ❄️ Nix Flake - Rust(Nightly) Template
 
 A simple template for quickly creating projects using nix flakes.
 

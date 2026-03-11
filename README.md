@@ -1,4 +1,4 @@
-# ❄️ Nix Flake - Rust(Nightly) Template
+# ❄️ Nix Flake - Rust(Nightly) Dioxus Template
 
 A simple template for quickly creating projects using nix flakes.
 

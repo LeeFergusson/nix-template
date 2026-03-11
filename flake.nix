@@ -35,12 +35,23 @@
                   "clippy"
                 ];
               })
+              # Dioxus dependencies
+              dioxus-cli
+              wasm-pack
+              llvmPackages.bintools
+              glib
+              gtk3
+              libsoup_3
+              webkitgtk_4_1
+              xdotool
+              openssl
               # Project dependencies
               # ...
             ];
 
             LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:${toString (pkgs.lib.makeLibraryPath buildInputs)}";
             RUST_SRC_PATH = "${rustPlatform.rustLibSrc}";
+            CARGO_TARGET_WASM32_UNKNOWN_UNKNOWN_LINKER = "lld";
           };
       }
     );

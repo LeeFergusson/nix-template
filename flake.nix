@@ -34,6 +34,7 @@
                   "rust-analyzer"
                   "clippy"
                 ];
+                targets = [ "wasm32-unknown-unknown" ];
               })
               # Dioxus dependencies
               dioxus-cli
